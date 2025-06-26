@@ -83,12 +83,12 @@ WSGI_APPLICATION = 'smart_care.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 # postgresql://management_4jz2_user:4MHelIxoxnBcMHb83OUFdAc4bit8DpXc@dpg-d1enqere5dus739uvhcg-a.oregon-postgres.render.com/management_4jz2
 
 DATABASES = {
