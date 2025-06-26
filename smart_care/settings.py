@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 import environ
 env = environ.Env()
 environ.Env.read_env()
@@ -87,6 +88,14 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+}
+# postgresql://management_4jz2_user:4MHelIxoxnBcMHb83OUFdAc4bit8DpXc@dpg-d1enqere5dus739uvhcg-a.oregon-postgres.render.com/management_4jz2
+
+DATABASES = {
+    'default': dj_database_url.config(
+        # Feel free to alter this value to suit your needs.
+        default='postgresql://management_4jz2_user:4MHelIxoxnBcMHb83OUFdAc4bit8DpXc@dpg-d1enqere5dus739uvhcg-a.oregon-postgres.render.com/management_4jz2',
+    )
 }
 
 
