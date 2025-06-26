@@ -81,7 +81,7 @@ service/                  # App for listing hospital services
 ### 1. Clone the repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Ishrakul-Tahmid/Hospital-Management-Backend-Using-Django-REST-API
 cd Hospital-Management-Backend-Using-Django-REST-API
 ```
 
